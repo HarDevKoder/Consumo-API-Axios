@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "miFuente";
+  src: url("./fonts/openSans.ttf");
+}
+
+html {
+  font-size: 100%;
+  font-family: miFuente;
+}
+
+body {
+  background-color: rgb(175, 224, 201);
+  color: black;
+  text-shadow: 0px 1px 1px silver;
+}
+
+.contenedorGeneral {
+  border: 1px solid gray;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+  width: 40%;
+  max-width: 40%;
+  height: auto;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 0;
+}
+
+.contenedorTitulo {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.ContenedorControles {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.labelId {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.inputId {
+  width: 40%;
+  text-align: center;
+  font-size: 1.2em;
+  border-radius: 0.3rem;
+  border: 1px solid black;
+  background: transparent;
+  padding: 0.2rem 0;
+  font-weight: 600;
+}
+
+.inputId::-webkit-inner-spin-button,
+.inputId::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputId:focus {
+  outline: 1px solid blue;
+}
+
+.contenedorResultados{
+  max-width: 98%;
+}
+
+.tablaResultados {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #000; /* Bordes de 1 píxel de ancho */
+  padding: 5px; /* Espaciado interno de las celdas */
+  background-color: yellow;
+}
+
+td {
+  border: 1px solid #000; /* Bordes de 1 píxel de ancho */
+  padding: 10px; /* Espaciado interno de las celdas */
+  background-color: rgb(195, 228, 248);
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+@media (max-width: 479px) {
+  .contenedorGeneral {
+    width: 97%;
+    max-width: 97%;
+    display: grid;
+    place-items: center;
+  }
+
+  .tituloGeneral {
+    display: grid;
+    place-items: center;
+    font-size: 1em;
+  }
+
+  td{
+    font-size: .8em;
+  }
+}
