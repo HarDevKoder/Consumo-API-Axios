@@ -72,7 +72,7 @@ body {
   outline: 1px solid blue;
 }
 
-.contenedorResultados{
+.contenedorResultados {
   max-width: 98%;
 }
 
@@ -112,7 +112,14 @@ td {
     font-size: 1em;
   }
 
-  td{
-    font-size: .8em;
+  td {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .contenedorGeneral {
+    width: fit-content;
+    max-width: 100%;
   }
 }
